@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  box-sizing: border-box;
+}
 /*Navbar */
 .navbar-nav {
   height: 4rem;
@@ -22,7 +24,7 @@
   width: 50px;
 }
 
-.navbar-list { 
+.navbar-list {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -33,10 +35,9 @@
   height: 100%;
 }
 
-.active-item{
+.active-item {
   color: black;
 }
-
 
 .nav-link {
   text-decoration: none;
@@ -51,14 +52,14 @@
   font-size: 1.5rem;
 }
 
-
 /*End of navbar */
 
 /* Images and content */
 .main-img {
   position: absolute;
+
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -72,9 +73,9 @@
   flex-direction: column;
   width: 50%;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   height: 100vh;
-  
 }
 
 .content > h1 {
@@ -98,6 +99,9 @@
 .content > p {
   z-index: 1;
   font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.1rem;
 }
 
 .footer {
@@ -115,45 +119,43 @@
   letter-spacing: 10px;
 }
 
-
 /* Options css*/
 .options-content {
-    background-color: rgb(56, 1, 66);
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .options-content > h2 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    z-index: 1;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-style: oblique;
-  }
-  
-.option-list{
-    list-style-type: circle;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 800;
-    z-index: 1;
+  background-color: rgb(199, 219, 21);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.options-content > h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-style: oblique;
+}
+
+.option-list {
+  list-style-type: circle;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  z-index: 1;
 }
 
 /* Prices.html */
-.main-prices{
+.main-prices {
   display: flex;
   justify-content: flex-end;
   text-align: left;
 }
 
-
-.price-table{
+.price-table {
   z-index: 1;
   table-layout: auto;
   border: 1px solid green;
@@ -164,31 +166,32 @@
   height: 20%;
 }
 
-.table-head{
+.table-head {
   background-color: grey;
   color: rgb(59, 44, 57);
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   font-style: oblique;
   font-size: 1.2rem;
- 
 }
-th{
+th {
   margin: 20px;
 }
 
-.price-table td,th {
+.price-table td,
+th {
   padding: 5px;
   border: 1px solid black;
   font-size: 1rem;
   font-weight: 800;
 }
-.price-table tr:nth-child(even){
+.price-table tr:nth-child(even) {
   background-color: whitesmoke;
 }
 
-.content-prices{
+.content-prices {
   background-color: rgb(3, 105, 105);
   border: 1px solid black;
   display: flex;
@@ -199,3 +202,22 @@ th{
   height: 100vh;
 }
 
+/* Contact.html */
+
+.content-contact {
+  background-color: rgb(230, 8, 8);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-contact > h2 {
+  color: white;
+  z-index: 2;
+  font-size: 3.5rem;
+  font-family: Brush Script MT;
+}
