@@ -57,9 +57,10 @@ html {
 /* Images and content */
 .main-img {
   position: absolute;
-
+  left: 0;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -107,6 +108,7 @@ html {
 .footer {
   position: sticky;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 2rem;
   background-color: black;
